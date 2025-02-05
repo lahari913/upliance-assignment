@@ -37,7 +37,7 @@ const Auth: React.FC<AuthProps> = ({ user, setUser }) => {
         width: "100%",
         height: "100vh", // Full height for proper centering
         boxSizing: "border-box",
-        backgroundColor: user ? "transparent" : "#f4f4f4", // Light background for better contrast
+        backgroundColor: user ? "transparent" : "#f4f4f4", 
         overflow: "hidden",
       }}
     >
@@ -45,12 +45,12 @@ const Auth: React.FC<AuthProps> = ({ user, setUser }) => {
         <Box
           sx={{
             display: "flex",
-            flexDirection: "column", // 🔥 Stack vertically
-            alignItems: "center", // Center items
+            flexDirection: "column", 
+            alignItems: "center", 
             gap: 1,
             position: "absolute",
             top: 10,
-            right: 20, // Move to the top-right corner
+            right: 20, 
           }}
         >
           {user.photoURL && (

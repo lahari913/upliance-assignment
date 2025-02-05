@@ -37,7 +37,7 @@ const UserForm: React.FC = () => {
     localStorage.setItem("userData", JSON.stringify(updatedUser));
     setUser(updatedUser); // Update state with new ID
     setIsDirty(false);
-    console.log("Saved User:", updatedUser); // ✅ Fix: Console log data
+    console.log("Saved User:", updatedUser); 
     alert("Data Saved!");
   };
 

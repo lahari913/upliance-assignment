@@ -16,15 +16,14 @@ const Counter: React.FC = () => {
       sx={{
         position: "relative",
         width: "100%",
-        height: "500px", // Increased height for more increments
+        height: "500px", 
         border: "2px solid black",
         overflow: "hidden",
         textAlign: "center",
         marginTop: "60px",
-        borderRadius: "10px", // Slightly rounded for aesthetics
+        borderRadius: "10px", 
       }}
     >
-      {/* Animated background filling effect */}
       <animated.div
         style={{
           position: "absolute",

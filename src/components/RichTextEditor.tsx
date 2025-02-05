@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import ReactQuill from 'react-quill';
 import { Button, Box } from '@mui/material';
-import 'react-quill/dist/quill.snow.css'; // ✅ Import required styles
+import 'react-quill/dist/quill.snow.css'; 
 
 const RichTextEditor: React.FC = () => {
   const [content, setContent] = useState('');
@@ -30,9 +30,8 @@ const RichTextEditor: React.FC = () => {
   return (
     <Box sx={{ maxWidth: 600, margin: '60px auto' }}>
       <h2>Rich Text Editor</h2>
-      {/* ✅ Fix: Added theme & explicit height */}
       <ReactQuill 
-        theme="snow" // ✅ Required to make it visible
+        theme="snow" 
         value={content} 
         onChange={setContent} 
         modules={modules} 
